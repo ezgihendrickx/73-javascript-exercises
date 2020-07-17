@@ -9,12 +9,17 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
+  document.getElementById("run").addEventListener("click", function () {
+    // Create an empthy array which we will fill up with 4 or 21 numbers//
 
-    document.getElementById("run").addEventListener("click", function() {
+    let squarenumbers = [];
+    // for loop: for 1 to 21: run this loop 21 or 4 times
+    for (i = 1; i * i <= 21; i++) {
+      // First element of an array is [0], therefore i-1
+      squarenumbers[i - 1] = i * i;
+    }
 
-        // your code here
-
-    });
-
+    alert(squarenumbers);
+  });
 })();

@@ -9,14 +9,16 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
+  // to get the value of an input: document.getElementById("element-id").value
+  let array1 = document.getElementById("numbers").value.split(", ");
+  console.log(array1);
 
-    // to get the value of an input: document.getElementById("element-id").value
-
-    document.getElementById("run").addEventListener("click", function() {
-
-        // your code here
-
-    });
-
+  document.getElementById("run").addEventListener("click", function () {
+    // Sort() sorts the array alphabetically (2 will be shown after 19)
+    let array2 = array1.sort((a, b) => a - b);
+    // sort the array from small to large. b-a would sort it from large to small
+    console.log(array2);
+    document.getElementById("run").innerHTML = array2;
+  });
 })();
