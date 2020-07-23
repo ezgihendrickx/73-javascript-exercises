@@ -10,5 +10,14 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+  document.getElementById("run").addEventListener("click", function () {
+    let me = {
+      lastName: "Hendrickx",
+      firstName: "Ezgi",
+      age: 29,
+      city: "Gent",
+      country: "Belgium",
+    };
+    console.log(me);
+  });
 })();

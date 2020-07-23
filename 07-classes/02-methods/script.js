@@ -10,5 +10,25 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+  class Person {
+    constructor(firstname, lastname) {
+      this._firstname = firstname;
+      this._lastname = lastname;
+    }
+    get firstname() {
+      return this._firstname;
+    }
+    get lastname() {
+      return this._lastname;
+    }
+    sayHello() {
+      return "Hello, " + this.firstname + " " + this.lastname;
+    }
+  }
+
+  document.getElementById("run").addEventListener("click", function () {
+    const personEzgi = new Person("Ezgi", "Hendrickx");
+    console.log(personEzgi);
+    console.log(personEzgi.sayHello());
+  });
 })();

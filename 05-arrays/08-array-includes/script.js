@@ -9,23 +9,31 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
+  const fruits = [
+    "apple",
+    "perry",
+    "strawberry",
+    "tomato",
+    "kiwi",
+    "banana",
+    "orange",
+    "mandarin",
+    "durian",
+    "peach",
+    "grapes",
+    "cherry",
+  ];
 
-    const fruits = [
-        "apple",
-        "perry",
-        "strawberry",
-        "tomato",
-        "kiwi",
-        "banana",
-        "orange",
-        "mandarin",
-        "durian",
-        "peach",
-        "grapes",
-        "cherry",
-    ];
-
-    // your code here
-
+  document.getElementById("run").addEventListener("click", function () {
+    //This one line does the same thing as the code below if which is commented out
+    let list = fruits.includes("apple");
+    //let list = "No";
+    // fruits.forEach(function (item, i) {
+    //    if (item == "apple") {
+    //    list = "Yes";
+    //      }
+    //   });
+    console.log(list);
+  });
 })();

@@ -9,8 +9,21 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
+  let txt = document.getElementById("target").innerHTML;
+  document.getElementById("target").innerHTML = "";
 
-    // your code here
-
+  let speed = Math.random() * 150;
+  let i = 0;
+  function typeWriter() {
+    if (i < txt.length) {
+      document.getElementById("target").innerHTML += txt.charAt(i);
+      i++;
+      setTimeout(typeWriter, speed);
+    }
+  }
+  typeWriter();
+  // your code here
 })();
+
+
