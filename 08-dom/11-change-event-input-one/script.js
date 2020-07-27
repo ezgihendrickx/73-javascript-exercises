@@ -9,8 +9,11 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
-
-    // your code here
-
+(function () {
+  document.getElementById("pass-one").addEventListener("input", () => {
+    document.getElementById("pass-one").maxLength = "10";
+    document.getElementById("counter").innerHTML = document.getElementById(
+      "pass-one"
+    ).value.length;
+  });
 })();

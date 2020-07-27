@@ -9,8 +9,16 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
-
-    // your code here
-
+(function () {
+  document.getElementById("run").addEventListener("click", () => {
+    if (
+      document.getElementById("pass-one").value ==
+      document.getElementById("pass-two").value
+    ) {
+      alert("Correct, well done!");
+    } else {
+      document.getElementById("pass-one").classList.add("error");
+      document.getElementById("pass-two").classList.add("error");
+    }
+  });
 })();

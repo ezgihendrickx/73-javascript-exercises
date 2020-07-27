@@ -9,8 +9,18 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
-
-    // your code here
-
+(function () {
+  // create table
+  let multiply = "<table>";
+  for (i = 1; i < 11; i++) {
+    //create 11 (i) rows:
+    multiply += "<tr>";
+    for (e = 1; e < 11; e++) {
+      //inside every row: create 11 columns (e):
+      multiply += " <td>" + i * e + "</td>"; //i*e is the mathematics part, not important
+    }
+    multiply += "</tr>";
+  }
+  multiply += "</table>";
+  document.getElementById("target").innerHTML = multiply;
 })();
