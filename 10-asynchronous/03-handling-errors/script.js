@@ -10,5 +10,13 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+  function myCallbackFuntion(error, persons) {
+    persons.forEach((element) => {
+      console.log(element.id);
+    });
+  }
+
+  document.getElementById("run").onclick = () => {
+    console.error(window.lib.getPersons(myCallbackFuntion));
+  };
 })();

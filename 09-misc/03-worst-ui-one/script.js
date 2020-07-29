@@ -9,8 +9,13 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
+  let inputSlider = document.getElementById("slider");
+  let outputElement = document.getElementById("target");
 
-    // your code here
-
+  //below function: what happens when using the slider (oninput)
+  inputSlider.oninput = function () {
+    let phoneNumber = "0" + this.value;
+    outputElement.innerHTML = phoneNumber;
+  };
 })();
