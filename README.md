@@ -12,4 +12,4 @@ This is the repository for the exercise: https://github.com/becodeorg/gnt-yu-3-2
 
 ## Author :black_nib:
 
-Powered by Ezgi
+:star: Powered by Ezgi
